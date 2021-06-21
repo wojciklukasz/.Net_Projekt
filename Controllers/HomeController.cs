@@ -57,7 +57,7 @@ namespace Project.Controllers
                     if(Convert.ToDouble(k.y) == 0)
                     {
                         Console.WriteLine("Zero");
-                        k.result = "Nie mozna dzielic przez zero!";
+                        k.result = "Nie można dzielić przez zero!";
                         
                     }
                     else
