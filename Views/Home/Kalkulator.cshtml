@@ -1,0 +1,33 @@
+﻿@model Project.Models.KalkulatorModel
+@{
+    ViewBag.Title = "Kalkulator";
+}
+
+<div class="text-center">
+
+    @using (Html.BeginForm())
+    {
+        <p>x</p>
+        @Html.EditorFor(x => Model.x)
+
+        <br />
+        <br />
+
+        <p>y</p>
+        @Html.EditorFor(x => Model.y)
+
+        <br />
+        <br />
+
+        <input id="ButtonAdd" type="submit" name="c" value="+" />
+        <input id="ButtonSub" type="submit" name="c" value="-" />
+        <input id="ButtonMlt" type="submit" name="c" value="*" />
+        <input id="ButtonDiv" type="submit" name="c" value="/" />
+
+        <br />
+        <br />
+
+        <p>wynik</p>
+        @Html.DisplayFor(x => Model.result)
+    }
+</div>
